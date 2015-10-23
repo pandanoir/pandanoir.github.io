@@ -1,0 +1,45 @@
+body {
+  -webkit-text-size-adjust: 100%; }
+
+h1 {
+  color: #6BB5D1; }
+
+dt {
+  border-top: 1px solid #6BB5D1;
+  width: 200px;
+  float: left; }
+
+dd {
+  border-top: 1px solid #6BB5D1;
+  margin-left: 200px;
+  width: 796px;
+  padding: 0 2px; }
+
+dt:first-of-type, dd:first-of-type {
+  border-top: none; }
+
+dt, dd {
+  padding-top: 5px;
+  padding-bottom: 3px; }
+
+dl {
+  width: 1000px;
+  overflow: hidden; }
+
+dd:after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  dt {
+    width: 150px; }
+
+  dd {
+    width: 146px;
+    margin-left: 150px; }
+
+  dl {
+    width: 300px; } }
+
+/*# sourceMappingURL=style.css.map */
