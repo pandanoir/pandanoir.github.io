@@ -1,5 +1,9 @@
 body {
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  font-size: 13px; }
+
+p {
+  text-indent: 1em; }
 
 h1 {
   color: #6BB5D1; }
@@ -33,13 +37,14 @@ dd:after {
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
   dt {
-    width: 150px; }
+    width: 130px; }
 
   dd {
-    width: 146px;
-    margin-left: 150px; }
+    width: 166px;
+    margin-left: 130px; }
 
   dl {
-    width: 300px; } }
+    width: 300px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */

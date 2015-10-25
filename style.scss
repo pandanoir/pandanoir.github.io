@@ -31,6 +31,10 @@ $rgba-primary-4: rgba( 69,147,177,1);
 
 body {
   -webkit-text-size-adjust: 100%;
+  font-size: 13px;
+}
+p {
+    text-indent: 1em;
 }
 h1 {
     color: $color-primary-3;
@@ -66,14 +70,16 @@ dd:after {
     content: "";
 }
 @media screen and (min-width: 320px) and (max-width: 500px) {
+    $dt-width: 130px;
     dt {
-        width: 150px;
+        width: $dt-width;
     }
     dd {
-        width: 146px;
-        margin-left: 150px;
+        width: 300px - $dt-width - 4px;
+        margin-left: $dt-width;
     }
     dl {
         width: 300px;
+        margin: 0 auto;
     }
 }
