@@ -1,1 +1,1 @@
-[pandanoir.github.io](pandanoir.github.io)
+[pandanoir.github.io](http://pandanoir.github.io)
