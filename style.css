@@ -45,6 +45,9 @@ dd:after {
 
   dl {
     width: 300px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
 
-/*# sourceMappingURL=style.css.map */
+  img {
+    border: 2px solid #888;
+    margin: 0 auto;
+    max-width: 300px; } }
