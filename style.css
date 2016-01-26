@@ -8,46 +8,23 @@ p {
 h1 {
   color: #6BB5D1; }
 
-dt {
-  border-top: 1px solid #6BB5D1;
-  width: 200px;
-  float: left; }
+.profile-list {
+  list-style: none; }
 
-dd {
-  border-top: 1px solid #6BB5D1;
-  margin-left: 200px;
-  width: 796px;
-  padding: 0 2px; }
-
-dt:first-of-type, dd:first-of-type {
-  border-top: none; }
-
-dt, dd {
-  padding-top: 5px;
-  padding-bottom: 3px; }
-
-dl {
-  width: 1000px;
-  overflow: hidden; }
-
-dd:after {
-  display: block;
-  clear: both;
-  content: ""; }
+.profile-list li {
+  background: #C6EAF7;
+  display: inline-block;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 3px; }
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
-  dt {
-    width: 130px; }
-
-  dd {
-    width: 166px;
-    margin-left: 130px; }
-
-  dl {
-    width: 300px;
-    margin: 0 auto; }
-
   img {
     border: 2px solid #888;
-    margin: 0 auto;
-    max-width: 300px; } }
+    max-width: 300px; }
+
+  .profile-list li {
+    margin-bottom: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
