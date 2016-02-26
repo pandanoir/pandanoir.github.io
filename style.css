@@ -19,6 +19,48 @@ h1 {
   margin-bottom: 30px;
   border-radius: 3px; }
 
+.balloon, .balloon2 {
+  /* 427x570 */
+  background-size: cover;
+  width: 200px;
+  height: 267px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.balloon {
+  background-image: url(balloon.png); }
+
+.balloon2 {
+  background-image: url(balloon2.png); }
+
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .balloon, .balloon2 {
+    width: 113px;
+    height: 150px; }
+
+  .profile-image {
+    width: 128px;
+    height: 128px; } }
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .balloon, .balloon2 {
+    width: 96px;
+    height: 128px; }
+
+  .balloon .container {
+    margin-left: 7px; }
+
+  .balloon2 .container {
+    margin-left: -7px; }
+
+  .profile-image {
+    width: 150px;
+    height: 150px; } }
 @media screen and (min-width: 320px) and (max-width: 500px) {
   img {
     border: 2px solid #888;
