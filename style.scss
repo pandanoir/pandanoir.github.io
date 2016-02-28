@@ -84,8 +84,13 @@ h1 {
 }
 @media screen and (min-width: 375px) and (max-width: 413px) {
     .balloon, .balloon2 {
+        position: absolute;
         width: 96px;
         height: 128px;
+        top: 100px;
+    }
+    .balloon2 {
+        margin-left: -96px;
     }
     .balloon .container {
         margin-left: 7px;
@@ -94,8 +99,8 @@ h1 {
         margin-left: -7px;
     }
     .profile-image {
-        width: 150px;
-        height: 150px;
+        width: 320px;
+        height: 320px;
     }
 
 }
@@ -103,7 +108,6 @@ h1 {
 @media screen and (min-width: 320px) and (max-width: 500px) {
     img {
         border: 2px solid #888;
-        max-width: 300px;
     }
     .profile-list li {
         margin-bottom: 15px;
