@@ -1,12 +1,18 @@
 body {
   -webkit-text-size-adjust: 100%;
-  font-size: 13px; }
+  font-size: 13px;
+  background: #f6f6f6;
+  color: #444; }
 
 p {
   text-indent: 1em; }
 
 h1 {
   color: #6BB5D1; }
+
+.star {
+  color: #F0F406;
+  text-shadow: 1px 1px 0 #BFC205; }
 
 .profile-list {
   list-style: none; }
