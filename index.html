@@ -4,61 +4,9 @@
     <meta charset="UTF-8">
     <title>Panda Noir</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <style>
-    .boxes {
-      display: flex;
-      justify-content: space-around;
-    }
-    .box {
-      width: 300px;
-      padding: 5px;
-      border: 2px dashed #ccc;
-      border-radius: 2px;
-      margin: 5px;
-    }
-    .star {
-      text-align: middle;
-      width: 100px;
-      height: 8px;
-      display: inline-block;
-      background: #999;
-      border: 1px solid #666;
-      position: relative;
-    }
-    .star::before {
-      width: 100px;
-      height: 8px;
-      display: inline-block;
-      content: '';
-      background: #9cf;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .star.star-1::before { width: 20%; }
-    .star.star-2::before { width: 40%; }
-    .star.star-3::before { width: 60%; }
-    .star.star-4::before { width: 80%; }
-    .skill-list dt, .skill-list dd {
-      display: inline-block;
-      margin: 2px 0;
-      padding: 3px 0;
-      border-bottom: 2px solid #9cf;
-    }
-    .skill-list dt {
-      width: 180px;
-    }
-    .skill-list dd {
-      width: 120px;
-    }
-    @media screen and (max-width: 768px) {
-      .boxes {
-        flex-direction: column;
-      }
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/hack/dist/hack.css">
   </head>
-  <body>
+  <body class="hack">
     <h1>Profile</h1>
     <div class="boxes">
       <div class="box">
@@ -90,12 +38,12 @@
       <div class="box">
         <h2>SKILLS</h2>
         <dl class="skill-list">
-          <dt>JavaScript</dt><dd><div class="star star-4"></div></dd>
-          <dt>CSS</dt><dd><div class="star star-3"></div></dd>
-          <dt>HTML</dt><dd><div class="star star-3"></div></dd>
-          <dt>Ruby, PHP, Python</dt><dd><div class="star star-1"></div></dd>
-          <dt>Haskell</dt><dd><div class="star star-1"></div></dd>
-          <dt>C, C++</dt><dd>Learning Now...</dd>
+          <dt>JavaScript</dt><dd>まあ高い</dd>
+          <dt>CSS</dt><dd>まあ高い(高いも何もない気もする)</dd>
+          <dt>HTML</dt><dd>まあ高い</dd>
+          <dt>Ruby, PHP, Python</dt><dd>普通</dd>
+          <dt>Haskell</dt><dd>すごいH本読んだ程度</dd>
+          <dt>C, C++</dt><dd>学習中…</dd>
         </dl>
         <p>
           (あくまで主観です。僕が書いたQiitaやブログの記事などが客観的な判断材料になると思います)
