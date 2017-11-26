@@ -15,53 +15,66 @@
     opacity: 0;
     left: -15px;
   }
+  #title {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+  }
 </style>
 <body class="hack">
-<h1 data-is="lazy-content" class="hidden">Profile</h1>
-<h2 data-is="lazy-content" class="hidden">Info</h2>
-<ul data-is="lazy-content" class="hidden">
-  <li>name: Naoto Ikuno</li>
-  <li>country: Japan</li>
-  <li>age: 20</li>
-  <li>editor: Vim</li>
-  <li>favorite language: JavaScript</li>
-  <li>hobby: Aikido(合気道)</li>
-</ul>
-<h2 data-is="lazy-content" class="hidden">About</h2>
-<p data-is="lazy-content" class="hidden">
-  大学生です。趣味でプログラミングを6年ほどしています。twitterに常駐しています。<br>
-  <a href="http://github.com/pandanoir/unitaryjs">UnitaryJS</a>や<a href="http://github.com/pandanoir/list-in-js">List in JS</a>、<a href="http://pandanoir.net/works/typing/">Typing-beta(タイピングソフト)</a>、<a href="http://github.com/pandanoir/Snowball">Snowball(CSS圧縮ツール)</a>を開発しました。 他に作ったものは
-  <a href="http://pandanoir.net">ホームページ</a>においてあります。
-</p>
-<h2 data-is="lazy-content" class="hidden">SNS</h2>
-<ul data-is="lazy-content" class="hidden">
-  <li><a href="http://twitter.com/le_panda_noir">Twitter</a></li>
-  <li><a href="http://github.com/pandanoir">GitHub</a></li>
-  <li><a href="http://qiita.com/le_panda_noir">Qiita</a></li>
-  <li><a href="http://pandanoir.net">Homepage</a></li>
-  <li><a href="http://www.pandanoir.info">Blog</a></li>
-</ul>
-<h2 data-is="lazy-content" class="hidden">SKILLS</h2>
-<dl data-is="lazy-content" class="hidden skill-list">
-  <dt>JavaScript</dt>
-  <dd>まあ高い</dd>
-  <dt>CSS</dt>
-  <dd>まあ高い(高いも何もない気もする)</dd>
-  <dt>HTML</dt>
-  <dd>まあ高い</dd>
-  <dt>Ruby, PHP, Python</dt>
-  <dd>普通</dd>
-  <dt>Haskell</dt>
-  <dd>すごいH本読んだ程度</dd>
-  <dt>C, C++</dt>
-  <dd>学習中…</dd>
-</dl>
-<p data-is="lazy-content" class="hidden">
-  (あくまで主観です。僕が書いたQiitaやブログの記事などが客観的な判断材料になると思います)
-</p>
+<scene timeout="600">
+  <div id="title">Panda Noir</div>
+</scene>
+<scene start="600">
+  <h1 data-is="lazy-content" class="hidden">Profile</h1>
+  <h2 data-is="lazy-content" class="hidden">Info</h2>
+  <ul data-is="lazy-content" class="hidden">
+    <li>name: Naoto Ikuno</li>
+    <li>country: Japan</li>
+    <li>age: 20</li>
+    <li>editor: Vim</li>
+    <li>favorite language: JavaScript</li>
+    <li>hobby: Aikido(合気道)</li>
+  </ul>
+  <h2 data-is="lazy-content" class="hidden">About</h2>
+  <p data-is="lazy-content" class="hidden">
+    大学生です。趣味でプログラミングを6年ほどしています。twitterに常駐しています。<br>
+    <a href="http://github.com/pandanoir/unitaryjs">UnitaryJS</a>や<a href="http://github.com/pandanoir/list-in-js">List in JS</a>、<a href="http://pandanoir.net/works/typing/">Typing-beta(タイピングソフト)</a>、<a href="http://github.com/pandanoir/Snowball">Snowball(CSS圧縮ツール)</a>を開発しました。 他に作ったものは
+    <a href="http://pandanoir.net">ホームページ</a>においてあります。
+  </p>
+  <h2 data-is="lazy-content" class="hidden">SNS</h2>
+  <ul data-is="lazy-content" class="hidden">
+    <li><a href="http://twitter.com/le_panda_noir">Twitter</a></li>
+    <li><a href="http://github.com/pandanoir">GitHub</a></li>
+    <li><a href="http://qiita.com/le_panda_noir">Qiita</a></li>
+    <li><a href="http://pandanoir.net">Homepage</a></li>
+    <li><a href="http://www.pandanoir.info">Blog</a></li>
+  </ul>
+  <h2 data-is="lazy-content" class="hidden">SKILLS</h2>
+  <dl data-is="lazy-content" class="hidden skill-list">
+    <dt>JavaScript</dt>
+    <dd>まあ高い</dd>
+    <dt>CSS</dt>
+    <dd>まあ高い(高いも何もない気もする)</dd>
+    <dt>HTML</dt>
+    <dd>まあ高い</dd>
+    <dt>Ruby, PHP, Python</dt>
+    <dd>普通</dd>
+    <dt>Haskell</dt>
+    <dd>すごいH本読んだ程度</dd>
+    <dt>C, C++</dt>
+    <dd>学習中…</dd>
+  </dl>
+  <p data-is="lazy-content" class="hidden">
+    (あくまで主観です。僕が書いたQiitaやブログの記事などが客観的な判断材料になると思います)
+  </p>
+</scene>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.2.0/riot+compiler.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
 <script src="lazy-content.js"></script>
+<script src="../riot-component/scene.js"></script>
 <script>
   riot.mount('*')
 </script>
