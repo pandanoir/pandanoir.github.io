@@ -5,50 +5,39 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/hack/dist/hack.css">
 <style>
-  [data-is="lazy-content"] {
-    opacity: 1;
-    position: relative;
-    left: 0px;
-    transition: opacity 0.2s linear 0.1s, left 0.4s ease-out 0.1s;
-  }
-  [data-is="lazy-content"].hidden {
-    opacity: 0;
-    left: -15px;
-  }
-  #title {
-    position: absolute;
-    top: 50%;
-    margin-top: -400px;
-  }
+  [data-is="lazy-content"] {opacity: 1; position: relative; left: 0px; transition: opacity 0.2s linear 0.1s, left 0.4s ease-out 0.1s;}
+  [data-is="lazy-content"].hidden {opacity: 0; left: -15px;}
+  #title {position: absolute; top: 50%; margin-top: -400px; animation-name: fadeIn; animation-duration: 0.5s; animation-timing-function: linear;}
+  @keyframes fadeIn {from {opacity: 0; } to {opacity: 1; left: 0}}
 </style>
+
 <body class="hack">
-<scene timeout="700">
+<scene timeout="900">
   <div id="title"><img src="http://pandanoir.net/image/logo/white/logo.png" width="800"></div>
 </scene>
-<scene start="800">
+<scene start="1000">
   <h1 data-is="lazy-content" class="hidden">Profile</h1>
   <h2 data-is="lazy-content" class="hidden">Info</h2>
   <ul data-is="lazy-content" class="hidden">
-    <li>name: Naoto Ikuno</li>
-    <li>country: Japan</li>
-    <li>age: 20</li>
-    <li>editor: Vim</li>
-    <li>favorite language: JavaScript</li>
-    <li>hobby: Aikido(合気道)</li>
+    <li>name: Naoto Ikuno
+    <li>country: Japan
+    <li>age: 22
+    <li>editor: Vim
+    <li>favorite language: JavaScript
+    <li>hobby: Aikido(合気道)
   </ul>
   <h2 data-is="lazy-content" class="hidden">About</h2>
   <p data-is="lazy-content" class="hidden">
-    大学生です。趣味でプログラミングを6年ほどしています。twitterに常駐しています。<br>
-    <a href="http://github.com/pandanoir/unitaryjs">UnitaryJS</a>や<a href="http://github.com/pandanoir/list-in-js">List in JS</a>、<a href="http://pandanoir.net/works/typing/">Typing-beta(タイピングソフト)</a>、<a href="http://github.com/pandanoir/Snowball">Snowball(CSS圧縮ツール)</a>を開発しました。 他に作ったものは
-    <a href="http://pandanoir.net">ホームページ</a>においてあります。
+    大学生です。趣味でプログラミングを8年ほどしています。<br>
+    <a href="https://github.com/pandanoir/unitaryjs">UnitaryJS</a>や<a href="https://github.com/pandanoir/list-in-js">List in JS</a>、<a href="https://pandanoir.net/works/typing/">Typing-beta(タイピングソフト)</a>、<a href="https://pandanoir.net/paper">Paper(2次元メモ帳)</a>などを作りました。 他に作ったものは<a href="https://pandanoir.net">ホームページ</a>においてあります。
   </p>
   <h2 data-is="lazy-content" class="hidden">SNS</h2>
   <ul data-is="lazy-content" class="hidden">
-    <li><a href="http://twitter.com/le_panda_noir">Twitter</a></li>
-    <li><a href="http://github.com/pandanoir">GitHub</a></li>
-    <li><a href="http://qiita.com/le_panda_noir">Qiita</a></li>
-    <li><a href="http://pandanoir.net">Homepage</a></li>
-    <li><a href="http://www.pandanoir.info">Blog</a></li>
+    <li><a href="https://twitter.com/le_panda_noir">Twitter</a>
+    <li><a href="https://github.com/pandanoir">GitHub</a>
+    <li><a href="https://pandanoir.net">Homepage</a>
+    <li><a href="https://www.pandanoir.info">Blog</a>
+    <li><a href="https://note.mu/pandanoir">note</a>
   </ul>
   <h2 data-is="lazy-content" class="hidden">SKILLS</h2>
   <dl data-is="lazy-content" class="hidden skill-list">
@@ -69,8 +58,8 @@
     (あくまで主観です。僕が書いたQiitaやブログの記事などが客観的な判断材料になると思います)
   </p>
 </scene>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.2.0/riot+compiler.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.13.2/riot+compiler.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="lazy-content.js"></script>
 <script src="scene.js"></script>
 <script>
