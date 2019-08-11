@@ -1,0 +1,56 @@
+doctype html
+html(lang="ja")
+  meta(charset="utf-8")
+  title Panda Noir
+  meta(name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+  link(rel="stylesheet" href="https://unpkg.com/hack/dist/hack.css")
+  link(rel="stylesheet" href="./style.css")
+  body(class="hack")
+    img#background(src="http://pandanoir.net/image/logo/white-circle/logo.png" width="400")
+    h1 Profile
+    div
+      h2 Info
+      ul
+        each text in ["name: Naoto Ikuno", "country: Japan", "age: 22", "editor: NeoVim", "favorite language: JavaScript", "hobby: Aikido(合気道)"]
+          li: span.lined #{text}
+
+    div
+      h2 About
+      p(style="display: inline" class="lined")
+        | 大学生です。趣味でプログラミングを8年ほどしています。<br>
+        | <a href="https://github.com/pandanoir/unitaryjs">UnitaryJS</a>や<a href="https://github.com/pandanoir/list-in-js">List in JS</a>、
+        | <a href="https://pandanoir.net/works/typing/">Typing-beta(タイピングソフト)</a>、<a href="https://pandanoir.net/paper">Paper(2次元メモ帳)</a>
+        | などを作りました。他に作ったものは<a href="https://pandanoir.net">ホームページ</a>においてあります。
+
+    div
+      h2 SNS
+      ul
+        -
+          const links = [
+            ["https://twitter.com/le_panda_noir", "Twitter"],
+            ["https://github.com/pandanoir", "GitHub"],
+            ["https://pandanoir.net", "Homepage"],
+            ["https://www.pandanoir.info", "Blog"],
+            ["https://note.mu/pandanoir", "note"]];
+        each link in links
+          li: a(href=link[0] class="lined") #{link[1]}
+
+    div
+      h2 SKILLS
+      dl(class="skill-list")
+        -
+          const dl = [
+            ["JavaScript", "まあ高い"],
+            ["CSS", "まあ高い(高いも何もない気もする)"],
+            ["HTML", "まあ高い"],
+            ["Ruby, PHP, Python", "普通"],
+            ["OCaml", "ｵｷｬﾑﾙ"],
+            ["Haskell", "すごいH本読んだ程度"],
+            ["C++", "競プロでゴリゴリ使える程度"],
+            ["Sed", "競プロで使える程度"],
+            ["AWK", "競プロ(略)"]];
+        each d in dl
+          dt: span.lined #{d[0]}
+          dd: span.lined #{d[1]}
+      p
+        | (これらはあくまで主観です。僕が書いたQiitaやブログの記事などが客観的な判断材料になると思います)
