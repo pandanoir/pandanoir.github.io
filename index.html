@@ -3,12 +3,12 @@
 <meta charset="utf-8">
 <title>Panda Noir</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/hack/dist/hack.css">
+<link rel="stylesheet" href="https://unpkg.com/hack/dist/hack.css">
 <style>
-  [data-is="lazy-content"] {opacity: 1; position: relative; left: 0px; transition: opacity 0.2s linear 0.1s, left 0.4s ease-out 0.1s;}
-  [data-is="lazy-content"].hidden {opacity: 0; left: -15px;}
-  #title {position: absolute; top: 50%; margin-top: -400px; animation-name: fadeIn; animation-duration: 0.5s; animation-timing-function: linear;}
-  @keyframes fadeIn {from {opacity: 0; } to {opacity: 1; left: 0}}
+[data-is="lazy-content"] {opacity: 1;position: relative;left: 0px;transition: opacity 0.2s linear 0.1s, left 0.4s ease-out 0.1s;}
+[data-is="lazy-content"].hidden {opacity: 0; left: -15px;}
+#title {position: absolute; top: 50%; margin-top: -400px; animation-name: fadeIn; animation-duration: 0.5s; animation-timing-function: linear;}
+@keyframes fadeIn {from {opacity: 0; } to {opacity: 1; left: 0}}
 </style>
 
 <body class="hack">
@@ -22,7 +22,7 @@
     <li>name: Naoto Ikuno
     <li>country: Japan
     <li>age: 22
-    <li>editor: Vim
+    <li>editor: NeoVim
     <li>favorite language: JavaScript
     <li>hobby: Aikido(合気道)
   </ul>
@@ -41,23 +41,18 @@
   </ul>
   <h2 data-is="lazy-content" class="hidden">SKILLS</h2>
   <dl data-is="lazy-content" class="hidden skill-list">
-    <dt>JavaScript</dt>
-    <dd>まあ高い</dd>
-    <dt>CSS</dt>
-    <dd>まあ高い(高いも何もない気もする)</dd>
-    <dt>HTML</dt>
-    <dd>まあ高い</dd>
-    <dt>Ruby, PHP, Python</dt>
-    <dd>普通</dd>
-    <dt>OCaml</dt>
-    <dd>ｵｷｬﾑﾙ</dd>
-    <dt>Haskell</dt>
-    <dd>すごいH本読んだ程度</dd>
-    <dt>C, C++</dt>
-    <dd>学習中…</dd>
+    <dt>JavaScript</dt> <dd>まあ高い</dd>
+    <dt>CSS</dt><dd>まあ高い(高いも何もない気もする)</dd>
+    <dt>HTML</dt><dd>まあ高い</dd>
+    <dt>Ruby, PHP, Python</dt><dd>普通</dd>
+    <dt>OCaml</dt><dd>ｵｷｬﾑﾙ</dd>
+    <dt>Haskell</dt><dd>すごいH本読んだ程度</dd>
+    <dt>C++</dt><dd>競プロでゴリゴリ使える程度</dd>
+    <dt>Sed</dt><dd>競プロで使える程度</dd>
+    <dt>AWK</dt><dd>競プロ(略)</dd>
   </dl>
   <p data-is="lazy-content" class="hidden">
-    (あくまで主観です。僕が書いたQiitaやブログの記事などが客観的な判断材料になると思います)
+    (これらはあくまで主観です。僕が書いたQiitaやブログの記事などが客観的な判断材料になると思います)
   </p>
 </scene>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.13.2/riot+compiler.min.js"></script>
